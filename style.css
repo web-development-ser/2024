@@ -1,0 +1,202 @@
+/* Fontes importadas (Google Fonts); */
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+/* Zerando estilização inicial; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Font Inicial; */
+body {
+    font-size: 15pt;
+}
+/* Estilização completa da tag <main /> (estilização não aplicável pelo .js); */
+main {
+  background-image: url("./assets/img/es_int.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  
+  font-family: 'Ropa Sans', sans-serif;
+  letter-spacing: 1px;
+}
+/* <main /> para <div class:info /> */
+main .info {
+  margin: 2rem;
+  padding: 1.4rem 0;
+}
+main .info h3 {
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0.7rem 0;
+}
+main .info details {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+main .info a {
+  color: dodgerblue;
+}
+
+/* Estilização da <section class:container_day /> */
+.container_day {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  
+  background-image: url("h.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container_day ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 2rem 3.5rem;
+  /* border: solid 1px greenyellow; */
+  border-bottom-style: solid;
+  border-bottom-color: greenyellow;
+  border-bottom-width: 2px;
+  border-radius: 17px;
+}
+.container_day ul:hover {
+  border-color: gold;
+  transition: 0.7s;
+}
+.container_day ul li {
+  color: ghostwhite;
+  list-style: none;
+  margin-top: 0.3rem;
+  
+  letter-spacing: 2px;
+  font-size: 1.7rem;
+}
+
+/* Estilização aplicada pelo .js class:gold, green, blue. id:black não se aplica apenas decoração; */
+#black {
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+.gold {
+  border-bottom-color: gold;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+.green {
+  border-bottom-color: green;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+.blue {
+  border-bottom-color: blue;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+/* Estilização da porcentagem; */
+.container_pocn ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+  background: #1A132E;
+}
+.container_pocn ul li {
+  font-family: 'Ropa Sans', sans-serif;
+  
+  color: #FFFFFF;
+  list-style: none;
+  padding: 0.4rem;
+  margin: 0.4rem 0;
+  border-radius: 3px;
+}
+.link_falta {
+  font-size: 1rem;
+}
+/* Adicionado pelo .js; */
+#link {
+  background: #1A132E;
+  border-radius: 10px;
+  padding: 0.2rem 0.5rem;
+  font-weight: 1000;
+}
+#link a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: greenyellow;
+}
+#link a:hover {
+  color: gold;
+  transition: 0.7s;
+}
+
+/* Informações adicionais; */
+footer {
+  background: #1A132E;
+}
+/* Todo */
+.rede_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.container_rede, .container_ling {
+  font-family: 'Ropa Sans', sans-serif;
+  color: #FFFFFF;
+}
+.container_rede h4, .container_ling h4 {
+  padding: 1rem 0 0.5rem 0;
+}
+.container_rede ul, .container_ling ul  {
+  display: flex;
+  flex-direction: column;
+}
+.container_rede li, .container_ling li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0.5rem 0;
+  gap: 7px;
+}
+.container_rede ul li .fi {
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+.container_rede ul li a, .container_ling ul li {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+.id {
+  font-size: 0.7rem;
+  color: #FFFFFF;
+  font-family: 'Ropa Sans', sans-serif;
+  text-align: center;
+  padding: 0.7rem 0;
+}
+
+
+
+@media (min-width: 400px) {
+  .container_pocn {
+    font-size: 1.5rem;
+  }
+  .container_pocn ul li {
+    border-bottom-width: 2.2px;
+  }
+  .container_day ul li {
+    font-size: 2rem;
+  }
+  .container_day ul {
+    border-bottom-width: 3px;
+  }
+}
+@media (max-width: 399px) {
+  
+}
